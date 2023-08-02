@@ -2,6 +2,15 @@ package logica;
 
 import GUI.Ventanas;
 
+/**
+ * * @author Alonso Nuñez
+ * 
+ * @Alonso-Nunez
+ * @version 1
+ *          Parte lógica del progama que manda a llamar a las interfaces
+ *          generadas en otro paquete
+ */
+
 public class App {
     public static void main(String[] args) throws Exception {
         Ventanas mf = new Ventanas();
@@ -16,7 +25,7 @@ public class App {
 
         if (convsel == "Convertidor de monedas") {
             System.out.println("monedas");
-            mf.ventanaMonedaOrigen();
+            // mf.ventanaMonedaOrigen();
 
         } else if (convsel == "Convertidor de temperatura") {
             System.out.println("temperatura");
@@ -30,5 +39,11 @@ public class App {
         System.out.println(mf.ventanaMonedaDestino());
         System.out.println(mf.ventanaCantidadMonedaOrigen("Peso MX"));
         mf.ventanaCantidadMonedaDestino(12.0, 12.0 * 17, "Dólar", "Peso MX");
+        System.out.println(mf.ventanaContinuar());
+        System.out.println(mf.ventanaTemperaturaOrigen());
+        System.out.println(mf.ventanaCantidadTemperaturaOrigen("celsius"));
+        System.out.println(mf.ventanaTemperaturaDestino());
+        mf.ventanaCantidadTemperaturaDestino(12.0, 28.0,
+                "Celsius", "Kelvin");
     }
 }
