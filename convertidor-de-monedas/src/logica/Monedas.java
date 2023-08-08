@@ -2,10 +2,26 @@ package logica;
 
 public abstract class Monedas {
 
-    public double cantidadMonedas;
-    public double valorMoneda;
+    private double cantidadMonedas;
+    private double valorMoneda;
 
     public double calcularCambio(Monedas moneda1, Monedas moneda2) {
-        return cantidadMonedas * valorMoneda;
+        return moneda1.getCantidadMonedas() * moneda2.getValorMoneda();
+    }
+
+    public void setValorMoneda(double valorMoneda) {
+        this.valorMoneda = valorMoneda;
+    }
+
+    public void setCantidadMonedas(double cantidadMonedas) {
+        this.cantidadMonedas = cantidadMonedas;
+    }
+
+    public double getCantidadMonedas() {
+        return cantidadMonedas;
+    }
+
+    public double getValorMoneda() {
+        return valorMoneda;
     }
 }
