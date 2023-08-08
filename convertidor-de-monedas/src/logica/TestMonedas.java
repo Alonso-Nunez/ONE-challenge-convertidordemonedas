@@ -1,5 +1,8 @@
 package logica;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class TestMonedas {
     public static void main(String[] args) {
 
@@ -16,6 +19,14 @@ public class TestMonedas {
         libra.setCantidadMonedas(100);
         euro.setCantidadMonedas(100);
         dolar.setCantidadMonedas(100);
+
+        List<Monedas> monedas = new LinkedList<Monedas>();
+        monedas.add(dolar);
+        monedas.add(euro);
+        monedas.add(libra);
+        monedas.add(peso);
+        monedas.add(won);
+        monedas.add(yen);
 
     }
 }
