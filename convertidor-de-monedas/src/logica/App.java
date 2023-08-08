@@ -12,6 +12,14 @@ import GUI.Ventanas;
  */
 
 public class App {
+
+    private double cantidadMonedaDestino = 0.0;
+    private double cantidadMonedaOrigen = 0.0;
+    private double cantidadTemperaturaOrigen = 0.0;
+    private double cantidadTemperaturaDestino = 0.0;
+    private String monedaACambio = "";
+    private String monedaCambiada = "";
+
     public static void main(String[] args) throws Exception {
         Ventanas mf = new Ventanas();
         Object ob = mf.ventanaInicial();
