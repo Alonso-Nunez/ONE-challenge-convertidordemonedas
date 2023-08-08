@@ -2,26 +2,27 @@ package logica;
 
 public abstract class Monedas {
 
-    private double cantidadMonedas;
-    private double valorMoneda;
+    public abstract double calcularCambio(Monedas moneda2);
 
-    public double calcularCambio(Monedas moneda1, Monedas moneda2) {
-        return moneda1.getCantidadMonedas() * moneda2.getValorMoneda();
-    }
+    public abstract void setValorMoneda(int numeroMoneda);
 
-    public void setValorMoneda(double valorMoneda) {
-        this.valorMoneda = valorMoneda;
-    }
+    public abstract void setCantidadMonedas(double cantidadMonedas);
 
-    public void setCantidadMonedas(double cantidadMonedas) {
-        this.cantidadMonedas = cantidadMonedas;
-    }
+    public abstract double getCantidadMonedas();
 
-    public double getCantidadMonedas() {
-        return cantidadMonedas;
-    }
+    public abstract double getValorMoneda();
 
-    public double getValorMoneda() {
-        return valorMoneda;
-    }
+    public abstract String getNOMBRE();
+
+    public abstract double getVALORDOLAR();
+
+    public abstract double getVALOREURO();
+
+    public abstract double getVALORLIBRA();
+
+    public abstract double getVALORPESO();
+
+    public abstract double getVALORWON();
+
+    public abstract double getVALORYEN();
 }

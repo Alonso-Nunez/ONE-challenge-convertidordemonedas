@@ -13,20 +13,39 @@ public class TestMonedas {
         Won won = new Won();
         Yen yen = new Yen();
 
-        yen.setCantidadMonedas(100);
-        won.setCantidadMonedas(100);
-        peso.setCantidadMonedas(100);
-        libra.setCantidadMonedas(100);
-        euro.setCantidadMonedas(100);
-        dolar.setCantidadMonedas(100);
+        yen.setCantidadMonedas(1);
+        won.setCantidadMonedas(1);
+        peso.setCantidadMonedas(1);
+        libra.setCantidadMonedas(1);
+        euro.setCantidadMonedas(1);
+        dolar.setCantidadMonedas(1);
 
-        List<Monedas> monedas = new LinkedList<Monedas>();
-        monedas.add(dolar);
-        monedas.add(euro);
-        monedas.add(libra);
-        monedas.add(peso);
-        monedas.add(won);
-        monedas.add(yen);
+        List<Monedas> listamonedas = new LinkedList<Monedas>();
+        listamonedas.add(dolar);
+        listamonedas.add(euro);
+        listamonedas.add(libra);
+        listamonedas.add(peso);
+        listamonedas.add(won);
+        listamonedas.add(yen);
+        // System.out.println("Cambio de 100 monedas de cada tipo");
 
+        for (Monedas moneda : listamonedas) {
+            for (Monedas mon : listamonedas) {
+
+                if (mon != moneda) {
+                    mon.setValorMoneda(listamonedas.indexOf(moneda));
+                    System.out.println(moneda.getNOMBRE() + " a " + mon.getNOMBRE() + " = " +
+                            moneda.calcularCambio(mon));
+                }
+
+            }
+
+        }
+
+        /*
+         * dolar.setValorMoneda(listamonedas.indexOf(won));
+         * System.out.println(won.getNOMBRE() + " = " + won.calcularCambio(dolar) + " "
+         * + dolar.getNOMBRE());
+         */
     }
 }
