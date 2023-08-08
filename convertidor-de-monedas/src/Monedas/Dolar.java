@@ -1,15 +1,15 @@
-package logica;
+package Monedas;
 
-public class Won extends Monedas {
+public class Dolar extends Monedas {
 
-    // Equivalencias de las monedas con el won ( 1 moneda = x won)
-    private static double VALORDOLAR = 1313.52; // 0.00076;
-    private static double VALOREURO = 1443.01; // 0.00069;
-    private static double VALORLIBRA = 1676.8; // 0.0006;
-    private static double VALORPESO = 76.91; // 0.013;
-    private static double VALORWON = 1.0;
-    private static double VALORYEN = 9.17; // 0.11;
-    private static String NOMBRE = "Won";
+    // Equivalencias de las monedas con el dolar ( 1 moneda = x dolar)
+    private static double VALORDOLAR = 1.0;
+    private static double VALOREURO = 1.10; // 0.91;
+    private static double VALORLIBRA = 1.28; // 0.78;
+    private static double VALORPESO = 0.058; // 17.09;
+    private static double VALORWON = 0.00076; // 1313.52;
+    private static double VALORYEN = 0.007; // 143.11;
+    private static String NOMBRE = "Dolar";
     private double valorMoneda;
     private double cantidadMonedas;
 

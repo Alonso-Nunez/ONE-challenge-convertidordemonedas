@@ -1,15 +1,15 @@
-package logica;
+package Monedas;
 
-public class Yen extends Monedas {
+public class Libra extends Monedas {
 
-    // Equivalencias de las monedas con el yen ( 1 moneda = x yen)
-    private static double VALORDOLAR = 143.11; // 0.007;
-    private static double VALOREURO = 157.16; // 0.0064;
-    private static double VALORLIBRA = 182.6; // 0.0055;
-    private static double VALORPESO = 8.37; // 0.12;
-    private static double VALORWON = 0.11; // 9.17;
-    private static double VALORYEN = 1.0;
-    private static String NOMBRE = "Yen";
+    // Equivalencias de las monedas con la libra ( 1 moneda = x libra)
+    private static double VALORDOLAR = 0.78; // 1.28;
+    private static double VALOREURO = 0.86; // 1.16;
+    private static double VALORLIBRA = 1.0;
+    private static double VALORPESO = 0.046; // 21.82;
+    private static double VALORWON = 0.0006; // 1676.8;
+    private static double VALORYEN = 0.0055; // 182.6;
+    private static String NOMBRE = "Libra";
     private double valorMoneda;
     private double cantidadMonedas;
 

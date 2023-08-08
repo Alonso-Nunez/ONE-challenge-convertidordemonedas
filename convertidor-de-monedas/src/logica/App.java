@@ -1,6 +1,7 @@
 package logica;
 
 import GUI.Ventanas;
+import Monedas.*;
 
 /**
  * * @author Alonso Nuñez

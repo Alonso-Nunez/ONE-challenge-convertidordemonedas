@@ -2,6 +2,7 @@ package logica;
 
 import java.util.LinkedList;
 import java.util.List;
+import Monedas.*;
 
 public class TestMonedas {
     public static void main(String[] args) {

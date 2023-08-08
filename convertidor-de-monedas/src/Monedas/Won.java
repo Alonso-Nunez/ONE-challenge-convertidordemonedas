@@ -1,15 +1,15 @@
-package logica;
+package Monedas;
 
-public class Euro extends Monedas {
+public class Won extends Monedas {
 
-    // Equivalencias de las monedas con el euro ( 1 moneda = x euro)
-    private static double VALORDOLAR = 0.91; // 1.10;
-    private static double VALOREURO = 1.0;
-    private static double VALORLIBRA = 1.16; // 0.86;
-    private static double VALORPESO = 0.053; // 18.77;
-    private static double VALORWON = 0.00069; // 1443.01;
-    private static double VALORYEN = 0.0064; // 157.16;
-    private static String NOMBRE = "Euro";
+    // Equivalencias de las monedas con el won ( 1 moneda = x won)
+    private static double VALORDOLAR = 1313.52; // 0.00076;
+    private static double VALOREURO = 1443.01; // 0.00069;
+    private static double VALORLIBRA = 1676.8; // 0.0006;
+    private static double VALORPESO = 76.91; // 0.013;
+    private static double VALORWON = 1.0;
+    private static double VALORYEN = 9.17; // 0.11;
+    private static String NOMBRE = "Won";
     private double valorMoneda;
     private double cantidadMonedas;
 
@@ -94,5 +94,4 @@ public class Euro extends Monedas {
     public double calcularCambio(Monedas moneda2) {
         return this.getCantidadMonedas() * moneda2.getValorMoneda();
     }
-
 }

@@ -1,15 +1,15 @@
-package logica;
+package Monedas;
 
-public class Dolar extends Monedas {
+public class PesoMX extends Monedas {
 
-    // Equivalencias de las monedas con el dolar ( 1 moneda = x dolar)
-    private static double VALORDOLAR = 1.0;
-    private static double VALOREURO = 1.10; // 0.91;
-    private static double VALORLIBRA = 1.28; // 0.78;
-    private static double VALORPESO = 0.058; // 17.09;
-    private static double VALORWON = 0.00076; // 1313.52;
-    private static double VALORYEN = 0.007; // 143.11;
-    private static String NOMBRE = "Dolar";
+    // Equivalencias de las monedas con el peso ( 1 moneda = x peso)
+    private static double VALORDOLAR = 17.09; // 0.058;
+    private static double VALOREURO = 18.77; // 0.053;
+    private static double VALORLIBRA = 21.82; // 0.046;
+    private static double VALORPESO = 1.0;
+    private static double VALORWON = 0.013; // 76.91;
+    private static double VALORYEN = 0.12; // 8.37;
+    private static String NOMBRE = "Peso";
     private double valorMoneda;
     private double cantidadMonedas;
 

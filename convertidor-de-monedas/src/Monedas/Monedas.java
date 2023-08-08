@@ -1,4 +1,4 @@
-package logica;
+package Monedas;
 
 public abstract class Monedas {
 
