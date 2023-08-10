@@ -1,5 +1,10 @@
 package Monedas;
 
+/**
+ * @author @Alonso-Nunez
+ * @version 1
+ *          Clase para definición de métodos y atributos del Euro
+ */
 public class Euro extends Monedas {
 
     // Equivalencias de las monedas con el euro ( 1 moneda = x euro)
@@ -85,11 +90,19 @@ public class Euro extends Monedas {
 
     }
 
+    /**
+     * @param numeroMoneda dato de tipo int referente a una moneda
+     *                     Método que asigna el valor de conversión a usar
+     */
     @Override
     public void setCantidadMonedas(double cantidadMonedas) {
         this.cantidadMonedas = cantidadMonedas;
     }
 
+    /**
+     * @param Moneda_a_convertir
+     * @return valor de la conversión
+     */
     @Override
     public double calcularCambio(Monedas moneda2) {
         return this.getCantidadMonedas() * moneda2.getValorMoneda();

@@ -1,5 +1,10 @@
 package Temperaturas;
 
+/**
+ * @author @Alonso-Nunez
+ * @version 1
+ *          Clase para definición de métodos y atributos de la escala Celsius
+ */
 public class Celsius extends Temperaturas {
 
     private static String NOMBRE = "Celsius";
@@ -38,6 +43,10 @@ public class Celsius extends Temperaturas {
         this.cantidadTemperatura = cantidadTemperatura;
     }
 
+    /**
+     * @param temperatura_a_convertir
+     * @return valor de la conversión
+     */
     @Override
     public double calcularCambio(Temperaturas temperatura2) {
 

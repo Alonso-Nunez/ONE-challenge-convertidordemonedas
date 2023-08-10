@@ -1,5 +1,10 @@
 package Temperaturas;
 
+/**
+ * @author @Alonso-Nunez
+ * @version 1
+ *          Clase para definición de métodos y atributos de la escala Kelvin
+ */
 public class Kelvin extends Temperaturas {
 
     private static String NOMBRE = "Kelvin";
@@ -38,6 +43,10 @@ public class Kelvin extends Temperaturas {
         this.cantidadTemperatura = cantidadTemperatura;
     }
 
+    /**
+     * @param temperatura_a_convertir
+     * @return valor de la conversión
+     */
     @Override
     public double calcularCambio(Temperaturas temperatura2) {
         if (temperatura2.getNOMBRE() == "Fahrenheit") {

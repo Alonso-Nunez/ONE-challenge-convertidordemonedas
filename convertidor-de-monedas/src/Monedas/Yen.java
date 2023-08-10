@@ -1,5 +1,10 @@
 package Monedas;
 
+/**
+ * @author @Alonso-Nunez
+ * @version 1
+ *          Clase para definición de métodos y atributos del Yen Japonés
+ */
 public class Yen extends Monedas {
 
     // Equivalencias de las monedas con el yen ( 1 moneda = x yen)
@@ -58,6 +63,10 @@ public class Yen extends Monedas {
         return VALORYEN;
     }
 
+    /**
+     * @param numeroMoneda dato de tipo int referente a una moneda
+     *                     Método que asigna el valor de conversión a usar
+     */
     @Override
     public void setValorMoneda(int numeroMoneda) {
         switch (numeroMoneda) {
@@ -90,6 +99,10 @@ public class Yen extends Monedas {
         this.cantidadMonedas = cantidadMonedas;
     }
 
+    /**
+     * @param Moneda_a_convertir
+     * @return valor de la conversión
+     */
     @Override
     public double calcularCambio(Monedas moneda2) {
         return this.getCantidadMonedas() * moneda2.getValorMoneda();

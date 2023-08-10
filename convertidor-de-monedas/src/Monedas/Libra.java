@@ -1,5 +1,10 @@
 package Monedas;
 
+/**
+ * @author @Alonso-Nunez
+ * @version 1
+ *          Clase para definición de métodos y atributos de la Libra
+ */
 public class Libra extends Monedas {
 
     // Equivalencias de las monedas con la libra ( 1 moneda = x libra)
@@ -85,11 +90,19 @@ public class Libra extends Monedas {
 
     }
 
+    /**
+     * @param numeroMoneda dato de tipo int referente a una moneda
+     *                     Método que asigna el valor de conversión a usar
+     */
     @Override
     public void setCantidadMonedas(double cantidadMonedas) {
         this.cantidadMonedas = cantidadMonedas;
     }
 
+    /**
+     * @param Moneda_a_convertir
+     * @return valor de la conversión
+     */
     @Override
     public double calcularCambio(Monedas moneda2) {
         return this.getCantidadMonedas() * moneda2.getValorMoneda();

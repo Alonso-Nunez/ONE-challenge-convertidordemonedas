@@ -1,5 +1,10 @@
 package Monedas;
 
+/**
+ * @author @Alonso-Nunez
+ * @version 1
+ *          Clase abstracta para las monedas
+ */
 public abstract class Monedas {
 
     public abstract double calcularCambio(Monedas moneda2);

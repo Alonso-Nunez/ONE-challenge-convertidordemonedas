@@ -1,5 +1,10 @@
 package Temperaturas;
 
+/**
+ * @author @Alonso-Nunez
+ * @version 1
+ *          Clase abstracta para las escalas de temperatura
+ */
 public abstract class Temperaturas {
 
     public abstract String getNOMBRE();
