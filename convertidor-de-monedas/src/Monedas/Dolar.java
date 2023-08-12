@@ -14,18 +14,18 @@ public class Dolar extends Monedas {
     private static double VALORPESO = 0.058; // 17.09;
     private static double VALORWON = 0.00076; // 1313.52;
     private static double VALORYEN = 0.007; // 143.11;
-    private static String NOMBRE = "Dolar";
+    private static String NOMBRE = "Dólar";
     private double valorMoneda;
     private double cantidadMonedas;
 
     @Override
     public double getCantidadMonedas() {
-        return cantidadMonedas;
+        return this.cantidadMonedas;
     }
 
     @Override
     public double getValorMoneda() {
-        return valorMoneda;
+        return this.valorMoneda;
     }
 
     @Override

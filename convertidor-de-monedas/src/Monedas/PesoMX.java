@@ -15,18 +15,18 @@ public class PesoMX extends Monedas {
     private static double VALORPESO = 1.0;
     private static double VALORWON = 0.013; // 76.91;
     private static double VALORYEN = 0.12; // 8.37;
-    private static String NOMBRE = "Peso";
+    private static String NOMBRE = "Peso MX";
     private double valorMoneda;
     private double cantidadMonedas;
 
     @Override
     public double getCantidadMonedas() {
-        return cantidadMonedas;
+        return this.cantidadMonedas;
     }
 
     @Override
     public double getValorMoneda() {
-        return valorMoneda;
+        return this.valorMoneda;
     }
 
     @Override

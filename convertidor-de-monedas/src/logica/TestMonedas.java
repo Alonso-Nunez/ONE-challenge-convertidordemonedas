@@ -29,20 +29,40 @@ public class TestMonedas {
         listamonedas.add(won);
         listamonedas.add(yen);
         // System.out.println("Cambio de 100 monedas de cada tipo");
-
+        /*
+         * String monedaejemplo = "peso";
+         * for (Monedas moneda : listamonedas) {
+         * for (Monedas mon : listamonedas) {
+         * 
+         * if (mon != moneda) {
+         * mon.setValorMoneda(listamonedas.indexOf(moneda));
+         * System.out.println(moneda.getNOMBRE() + " a " + mon.getNOMBRE() + " = " +
+         * moneda.calcularCambio(mon));
+         * }
+         * 
+         * }
+         * 
+         * }
+         */
+        String selectorMonedaDestino = "Euro";
+        String selectorMonedaOrigen = "Dólar";
+        Monedas moneda1 = null;
+        Monedas moneda2 = null;
         for (Monedas moneda : listamonedas) {
-            for (Monedas mon : listamonedas) {
-
-                if (mon != moneda) {
-                    mon.setValorMoneda(listamonedas.indexOf(moneda));
-                    System.out.println(moneda.getNOMBRE() + " a " + mon.getNOMBRE() + " = " +
-                            moneda.calcularCambio(mon));
-                }
+            // System.out.println(moneda.getNOMBRE());
+            // System.out.println(moneda.getNOMBRE() == selectorMonedaOrigen);
+            // System.out.println(moneda.getNOMBRE() == selectorMonedaDestino);
+            if (moneda.getNOMBRE() == selectorMonedaOrigen) {
+                moneda1 = moneda;
 
             }
+            if (moneda.getNOMBRE() == selectorMonedaDestino) {
+                moneda2 = moneda;
 
+            }
         }
-
+        System.out.println(moneda1.getNOMBRE());
+        System.out.println(moneda2.getNOMBRE());
         /*
          * dolar.setValorMoneda(listamonedas.indexOf(won));
          * System.out.println(won.getNOMBRE() + " = " + won.calcularCambio(dolar) + " "

@@ -20,12 +20,12 @@ public class Yen extends Monedas {
 
     @Override
     public double getCantidadMonedas() {
-        return cantidadMonedas;
+        return this.cantidadMonedas;
     }
 
     @Override
     public double getValorMoneda() {
-        return valorMoneda;
+        return this.valorMoneda;
     }
 
     @Override
