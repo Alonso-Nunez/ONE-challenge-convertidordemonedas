@@ -1,5 +1,7 @@
 ## Convertidor de monedas creado para el Challenge de ONE
 
+Este repositorio contiene la carpeta con el proyecto desarrollado y con un ejecutable tipo jar.
+
 El convertidor consiste en una serie de ventanas del tipo JOptionPanel, ventanas cortas tipo de advertencia, en el que el usuario puede interactuar.
 
 - #### Ventana de inicio
