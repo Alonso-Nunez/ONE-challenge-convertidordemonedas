@@ -111,6 +111,7 @@ public class Convertidor {
                  */
                 if (ex.getMessage().toString().contains("is null")) {
                     if (inicio == null) {
+                        mf.ventanaFinalizarPrograma();
                         System.exit(0);
                     }
                 } else if (ex.getMessage().toString().contains("empty")) {
@@ -125,6 +126,7 @@ public class Convertidor {
                  */
                 ciclo = Integer.parseInt(mf.ventanaContinuar().toString());
                 if (ciclo == 1) {
+                    mf.ventanaFinalizarPrograma();
                     System.exit(0);
                 }
             }

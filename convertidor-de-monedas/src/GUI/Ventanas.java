@@ -164,4 +164,11 @@ public class Ventanas extends JFrame {
 				"Error", JOptionPane.ERROR_MESSAGE);
 	}
 
+	/**
+	 * Ventana que se lanza cuando finaliza el programa
+	 */
+	public void ventanaFinalizarPrograma() {
+		JOptionPane.showMessageDialog(rootPane, "Programa Finalizado");
+	}
+
 }
