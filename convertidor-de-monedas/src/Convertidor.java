@@ -97,6 +97,7 @@ public class Convertidor {
                             temperatura2 = temperatura;
                         }
                     }
+                    temperatura1.setCantidadTemperatura(cantidadTemperaturaOrigen);
                     mf.ventanaCantidadTemperaturaDestino(cantidadTemperaturaOrigen,
                             temperatura1.calcularCambio(temperatura2), selectorTemperaturaOrigen,
                             selectorTemperaturaDestino);
