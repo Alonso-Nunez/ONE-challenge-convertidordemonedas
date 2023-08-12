@@ -93,8 +93,8 @@ public class Ventanas extends JFrame {
 	 */
 	public Object ventanaContinuar() {
 		return JOptionPane.showConfirmDialog(rootPane,
-				"¿Desea continuar?", "Nueva Conversión",
-				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
+				"¿Desea realizar una nueva conversión?", "Nueva Conversión",
+				JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 	}
 
 	/**
@@ -152,6 +152,16 @@ public class Ventanas extends JFrame {
 						+ cantidadConvertida + " " + temperaturaDestino,
 				"Operación exitosa",
 				JOptionPane.INFORMATION_MESSAGE);
+	}
+
+	/**
+	 * Ventana que es lanzada cuando ocurrio un error
+	 * 
+	 * @param mensaje con informacion del error
+	 */
+	public void ventanaErrores(String mensaje) {
+		JOptionPane.showMessageDialog(rootPane, "Ocurrio un error: " + mensaje,
+				"Error", JOptionPane.ERROR_MESSAGE);
 	}
 
 }
