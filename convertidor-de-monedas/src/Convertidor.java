@@ -1,5 +1,3 @@
-package logica;
-
 import java.util.LinkedList;
 import java.util.List;
 
@@ -16,7 +14,7 @@ import Temperaturas.*;
  *          programa de forma correcta
  */
 
-public class App {
+public class Convertidor {
 
     public static void main(String[] args) throws Exception {
         /**
