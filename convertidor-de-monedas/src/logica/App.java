@@ -47,12 +47,14 @@ public class App {
         listaTemperaturas.add(celsius);
         listaTemperaturas.add(kelvin);
         listaTemperaturas.add(fahrenheit);
-        /**
-         * Implementación de las ventanas
-         */
         int ciclo = 0;
         Object inicio = null;
         String selectorDeConversion;
+
+        /**
+         * Implementación de las ventanas
+         */
+
         while (ciclo == 0) {
             try {
                 inicio = mf.ventanaInicial();
@@ -63,6 +65,11 @@ public class App {
                     String selectorMonedaDestino = mf.ventanaMonedaDestino().toString();
                     Monedas moneda1 = null;
                     Monedas moneda2 = null;
+                    /*
+                     * Compara el nombre de la moneda con el de la selección, y asigna las monedas 1
+                     * y 2
+                     * para usarlas en el programa
+                     */
                     for (Monedas moneda : listaMonedas) {
                         if (moneda.getNOMBRE() == selectorMonedaOrigen) {
                             moneda1 = moneda;
@@ -71,9 +78,10 @@ public class App {
                             moneda2 = moneda;
                         }
                     }
-
+                    // Asigna los valores necesario del valor de la moneda y de la cantidad
                     moneda2.setValorMoneda(listaMonedas.indexOf(moneda1));
                     moneda1.setCantidadMonedas(cantidadMonedaOrigen);
+                    // Manda a llamar la ventana y envia como parametro el calculo de la conversion
                     mf.ventanaCantidadMonedaDestino(cantidadMonedaOrigen, moneda1.calcularCambio(moneda2),
                             selectorMonedaOrigen, selectorMonedaDestino);
 
@@ -97,6 +105,12 @@ public class App {
 
                 }
             } catch (NullPointerException | NumberFormatException ex) {
+                /*
+                 * En caso de que se detecte alguno de los dos errores posibles en el programa
+                 * entonces dependiendo el error muestra un mensaje de advertencia de campo
+                 * vacio
+                 * o finaliza si es necesario
+                 */
                 if (ex.getMessage().toString().contains("is null")) {
                     if (inicio == null) {
                         System.exit(0);
@@ -106,6 +120,11 @@ public class App {
                 }
 
             } finally {
+                /*
+                 * Pregunta si se desea acabar con el programa, en caso de que la respuesta sea
+                 * sí
+                 * entonces finaliza el programa
+                 */
                 ciclo = Integer.parseInt(mf.ventanaContinuar().toString());
                 if (ciclo == 1) {
                     System.exit(0);
